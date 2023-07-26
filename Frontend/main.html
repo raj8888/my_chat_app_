@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllInOne</title>
+    <link rel="stylesheet" href="./styles/mainNavbar.css">
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+   <div class="navbar">
+    <div id="navbar">
+        <img id="gif" src="./Images/2_bgImg.gif">
+        <div>
+            <p id="brand_name">ChatFat</p>
+            <p id="brand_state">Makes you chat with dream</p>
+        </div>
+    </div>
+    <div id="longBtn">
+        <button class="openbtn" id="myopenbtn" onclick="openNav()">☰ My Profile</button> 
+    </div> 
+    <div id="smallbtn">
+        <button class="openbtn" id="myopenbtn" onclick="openNav()">☰</button> 
+    </div> 
+   </div>
+
+    <div id="mySidepanel" class="sidepanel">
+       <div id="side-div1">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div id="sid-img-div">
+            <img src="./Images/profile_pic.avif" alt="">
+            <p>Testing</p>
+        </div>
+       </div>
+       <div id="side-div2">
+        <a href="#middle-part" id="profile">My Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Contact</ad>
+        <a href="#">Logout</a>
+       </div>
+    </div>
+   
+   <section id="middle-part">
+    <div id="left-side-bar">
+        <div id="friends">
+            <p id="my-friends-head">My Friends</p>
+            <div id="friends-list">
+                <div class="my-fr">
+                    <img class="fr-pic" src="./Images/profile_pic.avif" alt="">
+                    <p class="fr-name">Testing</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div id="groups">
+            <p id="my-groups-head">My Groups</p>
+            <div id="group-list">
+                <div class="my-gr">
+                    <img class="gr-pic" src="./Images/profile_pic.avif" alt="">
+                    <p class="gr-name">Testing</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div id="mid-center-part">
+        
+    </div>
+   </section>
+
+
+</body>
+</html>
+<script>
+    function openNav() {
+        if(window.innerWidth>=410){
+            document.getElementById("mySidepanel").style.width = "300px";
+        document.getElementById("myopenbtn").style.display='none'
+        }else{
+            closeNav()
+            
+            document.getElementById("mySidepanel").style.width = "250px";
+            document.getElementById("myopenbtn").style.display='none'
+        }
+      
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+      document.getElementById("myopenbtn").style.display='block'
+    }
+
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./Scripts/main.js"></script>

@@ -1,0 +1,452 @@
+#left-side-bar{
+    width: 25%;
+    background-color: rgb(249, 208, 235);
+}
+#my-friends-head{
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(244, 39, 135);
+    color: white;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#friends-list{
+    height: 260px;
+    overflow-y: scroll;
+}
+
+.fr-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.my-fr{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    padding: 10px;
+}
+.my-fr:hover{
+    background-color: rgb(160, 2, 160);
+    cursor: pointer;
+    color: white;
+    }
+.fr-name{
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+#group-list{
+    height: 260px;
+    overflow-y: scroll; 
+}
+
+#my-groups-head{
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(244, 39, 135);
+    color: white;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.my-gr{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    padding: 10px;
+}
+.my-gr:hover{
+background-color: rgb(160, 2, 160);
+cursor: pointer;
+color: white;
+}
+.gr-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.gr-name{
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(247, 201, 229); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e099f8; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #77039e; 
+  }
+
+  #middle-part{
+    margin-top: 80px;
+    display: flex;
+
+  }
+
+  #mid-center-part{
+    width: 75%;
+  }
+
+  @media(min-width: 400px) and (max-width: 700px){
+    #left-side-bar{
+        width:40%;
+        background-color: rgb(234, 208, 249);
+    }
+    #mid-center-part{
+        width: 60%;
+      }
+  }
+  @media(min-width: 20px) and (max-width: 399px){
+    #left-side-bar{
+        width:100%;
+        background-color: rgb(234, 208, 249);
+    }
+    #mid-center-part{
+        display: none;
+      }
+  }
+  #sid-img-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sid-img-div img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+  }
+  #sid-img-div p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+#myProfhead{
+    background-color: rgb(164, 12, 198);
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#profilepic{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: rgb(250, 222, 237);
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+   
+}
+#profilepic img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom:10px;
+
+}
+#upProfilePic{
+    padding: 10px;
+    border: none;
+    background-color: rgb(206, 14, 245);
+    color: white;
+    border-radius: 5px;
+}
+#upProfilePic:hover{
+    cursor: pointer;;
+    background-color: #5d037a;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#newprofilelinke{
+    width: 60%;
+    left: 0;
+    height: 30px;
+    border: 3px solid #555
+}
+
+#saveProfilebtn,#cancelProfilebtn{
+    height: 29px;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+#saveProfilebtn{
+    background-color: lightgreen;
+}
+#cancelProfilebtn{
+    background-color: lightcoral;
+}
+#saveProfilebtn:hover{
+    background-color: rgba(23, 203, 23, 0.858);
+    cursor: pointer;
+}
+#cancelProfilebtn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#user-info{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+#user-info div{
+    display: flex;
+    flex-direction: row;
+}
+#user-info div div{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.info-div{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    background-color:rgb(43, 43, 43);
+    color: white;
+}
+.value-div{
+    display: flex;
+    align-items: center;
+    background-color: rgb(188, 188, 186);
+    margin-bottom: 10px;
+    width: 70%;
+}
+.value-div input{
+    margin-left: 15px;
+    height: 25px;
+    margin-right: 15px;
+    border: none;
+    background-color:rgb(188, 188, 186);
+    outline: none;
+    font-size: 18px;
+}
+.value-div button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.value-div button:hover{
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+    color: white(62, 62, 62);
+}
+.password-div form{
+    display: flex;
+    flex-direction: column;
+}
+.password-key-div{
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    background-color:rgb(43, 43, 43);
+    color: white;
+}
+.password-div{
+    padding-left: 10px;
+}
+.password-div form input{
+    margin-left: 15px;
+    height: 42px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 150%;
+    padding-left: 5px;
+}
+
+#passup{
+    margin-left:17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+#passup:hover{
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+    color: white(62, 62, 62);
+}
+
+@media(min-width: 700px) and (max-width: 1100px){
+    #user-info{
+        width: 80%;
+    }
+    
+    .info-div{
+        width: 20%;
+    }
+    .value-div{
+        width: 80%;
+    }
+    .password-key-div{
+        height: 45px;
+        padding: 10px;
+        margin-bottom: 7px;
+        width: 20%;
+    }
+    .password-div{
+        padding-left: 10px;
+    }
+    .password-div form input{
+        margin-left: 10px;
+        height: 42px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 150%;
+        padding-left: 5px;
+    }
+    
+    #passup{
+        margin-left:14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 699px){
+    #user-info{
+        width: 90%;
+    }
+    
+    .info-div{
+        width: 20%;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 20%;
+        font-size: 12px;
+
+    }
+    .value-div{
+        width: 80%;
+    }
+    .value-div input{
+        margin-left: 15px;
+        height: 25px;
+        margin-right: 5px;
+        font-size: 13px;
+        width: 130px;
+    }
+    .value-div button{
+        padding: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .password-key-div{
+        height: 45px;
+        padding: 10px 5px;
+        margin-bottom: 7px;
+        width: 22%;
+        font-size: 12px;
+    } 
+
+    .password-div form input{
+        margin-left: 8px;
+        height:38px;
+        font-size: 13px;
+        margin-bottom: 10px;
+        width: 100%;
+        padding-left: 5px;
+    }
+    
+    #passup{
+        margin-left:14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }  
+}
+@media(min-width: 400px) and (max-width: 499px){
+    #user-info{
+        width: 90%;
+    }
+    
+    .info-div{
+        width: 20%;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 21%;
+        font-size: 12px;
+
+    }
+    .value-div{
+        width: 80%;
+    }
+    .value-div input{
+        margin-left: 15px;
+        height: 25px;
+        margin-right: 5px;
+        font-size: 13px;
+        width: 130px;
+    }
+    .value-div button{
+        padding: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-left: -30px;
+    }
+    .password-key-div{
+        height: 45px;
+        padding: 10px 5px;
+        margin-bottom: 7px;
+        width: 30%;
+        font-size: 12px;
+    } 
+
+    .password-div form input{
+        margin-left: 8px;
+        height:38px;
+        font-size: 13px;
+        margin-bottom: 10px;
+        width: 80%;
+        padding-left: 5px;
+    }
+    
+    #passup{
+        margin-left:12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }  
+}
+
+@media(min-width: 20px) and (max-width: 500px){
+#correctname{
+    margin-right: 5px;
+}
+#cancelname{
+    margin-left: 10px;
+}
+}
+
